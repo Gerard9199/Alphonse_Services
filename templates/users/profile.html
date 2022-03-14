@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+    
+    <h1>Welcomeback!</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div>
+                    {%if accountStatus == False%}
+                    <p>Account Status Premium</p>
+                    {%else%}
+                    <p>Account Status No Premium</p>
+                    {%endif%}
+                </div>
+                <div>
+                    <ul class="list-group">
+                        {% for i in menu%}
+    
+                        <li class="list-group-item">
+                        {{i}}
+
+                        </li>
+    
+                        {%endfor%}
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
